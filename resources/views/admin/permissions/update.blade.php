@@ -27,7 +27,7 @@
             @csrf
 
             @php
-            $permissions = json_decode($company->permissions ?? '[]');
+            $permissions = $user->permissions ?? [];
 
             $allPermissions = [
                 ['key' => 'dashboard', 'label' => 'Dashboard', 'icon' => 'fas fa-home'],

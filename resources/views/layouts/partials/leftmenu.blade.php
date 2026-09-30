@@ -34,21 +34,21 @@ $user = auth()->user();
                 <li class="menu-title">Registration</li>
 
                 <li>
-                    <a href="{{ route('admin.delivery_rates.index') }}">
+                    <a href="{{ route('admin.registrations.index') }}">
                         <i class="bx bxs-truck"></i>
                         <span>Visitors</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="{{ route('admin.coupons.index') }}">
+                    <a href="#">
                         <i class="bx bxs-discount"></i>
                         <span>Students</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="{{ route('admin.product_categories.index') }}">
+                    <a href="#">
                         <i class="bx bx-box"></i>
                         <span>Stall Registration</span>
                     </a>
@@ -72,7 +72,7 @@ $user = auth()->user();
 
                     @if($user->hasAccess('orders'))
                     <li>
-                        <a href="{{ route('admin.orders.index') }}">
+                        <a href="#">
                             <i class="bx bx-cart"></i>
                             <span>Visitors</span>
                         </a>
@@ -81,7 +81,7 @@ $user = auth()->user();
 
                     @if($user->hasAccess('returns'))
                     <li>
-                        <a href="{{ route('admin.returns.index') }}">
+                        <a href="#">
                             <i class="bx bx-undo"></i>
                             <span>Students</span>
                         </a>

@@ -51,7 +51,7 @@ class PermissionController extends AdminController
             ->where('type', 'employee')
             ->firstOrFail();
 
-        $user->permissions = json_encode($request->permissions);
+        $user->permissions = $request->permissions;
         $user->save();
 
         return redirect()
